@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Conversor de Sistema Numérico</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <header class="header container">
+            <h1 class="header__titulo">Conversor</h1>
+        </header>
+
+        <main>
+            <section class="container">
+                <form class="conversor">
+
+                    <p class="conversor__texto">De</p>
+                    <input class="conversor__input" type="number" data-valor>
+                    <select class="conversor__tipo" data-tipo-valor>
+                        <option value="decimal" selected>Decimal</option>
+                        <option value="binario">Binário</option>
+                    </select>
+
+                    <p class="conversor__texto">Para</p>
+                    <input class="conversor__input" type="number" readonly data-resultado>
+                    <select class="conversor__tipo" data-tipo-resultado>
+                        <option value="decimal">Decimal</option>
+                        <option value="binario" selected>Binário</option>
+                    </select>
+                    
+                    <input class="conversor__botao" type="submit" value="Converter" data-botao-converter>
+
+                </form>
+            </section>
+
+            <section class="conteudo container">
+                <h2 class="conteudo__titulo">Sistema Decimal</h2>
+                <p class="conteudo__texto">O sistema decimal é de base 10, o que significa que ele contém 10 algarismos diferentes para representar todos os números.</p>
+                <p class="conteudo__texto">Os números decimais são formado pelos algarismos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.</p>
+                <p class="conteudo__texto">No dia a dia, normalmente vemos os números na forma decimal.</p>
+                
+                <h2 class="conteudo__titulo">Sistema Binário</h2>
+                <p class="conteudo__texto">O sistema binário é de base 2, o que significa que ele contém 2 algarismos diferentes para representar todos os números.</p>
+                <p class="conteudo__texto">Os números binários são formados pelos algarismos: 0, 1.</p>
+                <p class="conteudo__texto">O sistema binário é normalmente usado por computadores.</p>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
